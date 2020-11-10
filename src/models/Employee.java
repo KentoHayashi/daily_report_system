@@ -18,7 +18,7 @@ import javax.persistence.Table;
             query = "SELECT e FROM Employee AS e ORDER BY e.id DESC"
             ),
     @NamedQuery(
-            name = "getAllEmployeesCount",
+            name = "getEmployeesCount",
             query = "SELECT COUNT(e) FROM Employee AS e"
             ),
     @NamedQuery(
@@ -27,8 +27,8 @@ import javax.persistence.Table;
             ),
     @NamedQuery(
             name = "checkLoginCodeAndPassword",
-            query = "SELECT e FROM Employee AS e WHERE e.delete_flag = 0 AND e.code =:code AND e.password = :pass"
-            ),
+            query = "SELECT e FROM Employee AS e WHERE e.delete_flag = 0 AND e.code = :code AND e.password = :pass"
+            )
 })
 @Entity
 public class Employee {
@@ -52,7 +52,7 @@ public class Employee {
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
-    @Column(name = "update_at", nullable = false)
+    @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
     @Column(name = "delete_flag", nullable = false)
