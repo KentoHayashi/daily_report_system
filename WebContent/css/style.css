@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-body　{
+body {
     color: #333333;
     font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
 }
@@ -30,11 +30,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
 li {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -48,6 +43,10 @@ p {
 a {
     text-decoration: none;
     color: #24738e;
+}
+
+table, tr, th, td {
+    border: 1px solid #cccccc;
 }
 
 table {
@@ -65,7 +64,7 @@ td {
     padding: 10px 2%;
 }
 
-buttom {
+button {
     font-size: 14px;
     padding: 5px 10px;
 }
@@ -105,10 +104,10 @@ table#employee_list td {
 }
 
 tr.row1 {
-    background-color: #f2f2f2;
+        background-color: #f2f2f2;
 }
 tr.row0 {
-    background-color: #ffffff;
+        background-color: #ffffff;
 }
 
 select {
