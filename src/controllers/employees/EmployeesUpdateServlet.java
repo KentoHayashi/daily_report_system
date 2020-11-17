@@ -49,7 +49,7 @@ public class EmployeesUpdateServlet extends HttpServlet {
             if(e.getCode().equals(request.getParameter("code"))) {
                 code_duplicate_check = false;
             } else {
-                e.setCode(request.getParameter("cpde"));
+                e.setCode(request.getParameter("code"));
             }
 
             // パスワード欄に入力があったら
