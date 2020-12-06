@@ -39,6 +39,8 @@ public class ReportsShowServlet extends HttpServlet {
         em.close();
 
         request.setAttribute("report", r);
+        request.setAttribute("_token", request.getSession().getId());
+        request.getSession().setAttribute("report_id", r.getId());
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/reports/show.jsp");
         rd.forward(request, response);
